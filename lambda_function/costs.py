@@ -43,7 +43,7 @@ def format_cost_data(response):
 
 def send_sns_message(response):
     sns_client = boto3.client('sns')
-    topic_arn = "arn:aws:sns:us-east-1:773465154107:DailyChargesTopic"  # Replace with your SNS Topic ARN
+    topic_arn = "%REPLACE_WITH_TOPIC_ARN"  # Replace with your SNS Topic ARN
     
     # Compute the total for the last 3 days
     total_cost = sum(float(result['Total']['BlendedCost']['Amount']) for result in response['ResultsByTime'])
