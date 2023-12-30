@@ -2,7 +2,7 @@
 
 ### **1. Overview**
 
-This document provides detailed information on the Daily Charges Lambda function responsible for retrieving and sending daily AWS charges. The function queries the AWS Cost Explorer API to obtain cost and usage data for the most recent 3 days and then sends the retrieved information to an SNS topic for delivery to subscribers.
+Staying current and updated on AWS Spend is crucial for effective cost optimization, one of the 5 pillars of the AWS Well-Architected Framework.  This solution for tracking Overall Daily Charges uses a Lambda function for retrieving and sending daily AWS charges via AWS SNS Topic. The function queries the AWS Cost Explorer API to obtain cost and usage data for the most recent 3 days and then sends the retrieved information to an SNS topic for delivery to subscribers.
 
 ### **2. Prerequisites**
 
